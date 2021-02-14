@@ -29,6 +29,10 @@ body {
     padding: 0 3rem;
 }
 
+.container h2 {
+    text-transform: uppercase; 
+}
+
 @media screen and (max-width: 580px) {
 
     .container {
@@ -108,6 +112,68 @@ button {
     font-weight: 800;
     text-transform: uppercase;
     cursor: pointer;
+}
+
+.btn-intro {
+  
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 180px;
+    height: 30px;
+    background: #343233;
+    color: #EDA907;
+    font-family: Roboto;
+    letter-spacing: 2px;
+    text-align: center;
+    font-weight: 600;
+    text-transform: uppercase;
+    cursor: pointer;
+    line-height: 30px;
+    z-index: 100;
+}
+
+.btn-intro:before,
+.btn-intro:after,
+.btn-intro span:before,
+.btn-intro span:after {
+    content: '';
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background: #EDA907;
+    transition: 1s;
+    mix-blend-mode: hue;
+
+}
+
+.btn-intro:before {
+    top: -2px;
+    left: -2px;
+
+}
+.btn-intro:after {
+    top: -2px;
+    right: -2px;
+}
+
+.btn-intro span:before {
+    bottom: -2px;
+    left: -2px;
+
+}
+.btn-intro span:after {
+    bottom: -2px;
+    right: -2px;
+
+}
+
+.btn-intro:hover:before,
+.btn-intro:hover:after,
+.btn-intro:hover span:before,
+.btn-intro:hover span:after{
+    width: calc( 180px / 2);
+    height: calc( 30px / 2);
 }
 
 button:hover { opacity: 0.7; }
@@ -624,6 +690,15 @@ progress {
     border-radius: 4px;
     -webkit-box-shadow: inset 0 1px 2px rgba(0, 0, 0, .1);
             box-shadow: inset 0 1px 2px rgba(0, 0, 0, .1);
+  }
+
+  #particles-js {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    z-index: 99;
   }
   .progress-bar {
     float: left;
