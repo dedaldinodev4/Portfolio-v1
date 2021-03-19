@@ -1,13 +1,21 @@
 # Protfolio-v1
 
-#Cricação da primeira Versão do Meu Portfolio.
-# UI Design
-#Photoshop
-#Pitchon
-#Just Color Picker
+## Characteristics
 
-# Stacks
-#HTML5
-#CSS3
-#VANILLAJS
-#JQuery
+* Meu Porfolio Ou CV.
+* Site de Identificação
+
+## Design UI/UX
+
+* Just Color Picker
+* Photoshop CC
+* Pichon
+* Illustrator
+
+## Technologies
+
+* HTML5
+* CSS3
+* VanillaJs
+* Jquery
+* ParticlesJs
