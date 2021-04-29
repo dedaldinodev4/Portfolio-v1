@@ -74,6 +74,40 @@ $(function(){
         });
     })
 
+     
+        // var $container = $('.portfolio-section');
+        // $container.isotope({
+        //     filter: '*',
+        //     animationOptions: {
+        //         duration: 750,
+        //         easing: 'linear',
+        //         queue: false
+        //     }
+        // });
+
+        $('.cat li a').click(function() {
+            console.log($(this).id);
+            $('.cat li a.active-port').removeClass('active-port');
+            $(this).addClass('active-port');
+            var selector = $(this).attr('data-filter');
+            $container.isotope({
+                filter: selector,
+                animationOptions: {
+                    duration: 750,
+                    easing: 'linear',
+                    queue: false
+                }
+            });
+            return false;
+        });
+
+    
+
+
+    // $("a[rel^='prettyPhoto']").prettyPhoto({
+	// 	social_tools: false
+	// });	
+
 });
 
 //** ScrollTop Animate **//
@@ -102,3 +136,8 @@ $('a[href*="#"]')
             }
         }
     });
+
+
+   
+
+
