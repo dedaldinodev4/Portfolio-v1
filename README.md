@@ -1,4 +1,4 @@
-# Protfolio-v1
+﻿# Protfolio-v1
 
 ## Characteristics
 
@@ -19,3 +19,5 @@
 * VanillaJs
 * Jquery
 * ParticlesJs
+
+![ScreenShot 01](/img.png)
